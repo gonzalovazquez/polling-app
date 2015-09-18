@@ -1,0 +1,19 @@
+{
+  "name": "polling-app",
+  "version": "0.0.1",
+  "author": "Gonzalo Vazquez",
+  "description": "A polling app using ReactJS and SocketIO",
+  "private": true,
+  "contributors": [
+    {
+      "name": "Gonzalo Vazquez",
+      "email": "gonzalo.segura1@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gonzalovazquez/polling-app.git"
+  },
+  "devDependencies": {
+  }
+}
