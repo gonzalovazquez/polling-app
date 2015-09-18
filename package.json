@@ -17,13 +17,6 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "babel": "^5.8.23",
-    "bootstrap": "^3.3.5",
-    "express": "^4.13.3",
-    "react": "^0.13.3",
-    "socket.io": "^1.3.6",
-    "socket.io-client": "^1.3.6",
-    "webpack": "^1.12.2"
   },
   "scripts": {
     "prestart": "webpack",

@@ -1,5 +1,6 @@
 var React = require('react');
 var io = require('socket.io-client');
+var Header = require('./parts/Header');
 
 var APP = React.createClass({
     componentWillMount() {
@@ -10,7 +11,11 @@ var APP = React.createClass({
         alert('Connected: ' + this.socket.id);
     },
     render() {
-        return (<h1>Hello World from React</h1>);            
+        return(
+            <div>
+                hello
+            </div>
+        );
      }
 });
 
