@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "author": "Gonzalo Vazquez",
   "description": "A polling app using ReactJS and SocketIO",
+  "main": "app-server.js",
   "private": true,
   "contributors": [
     {
@@ -14,6 +15,12 @@
     "type": "git",
     "url": "https://github.com/gonzalovazquez/polling-app.git"
   },
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
+    "babel": "^5.8.23",
+    "bootstrap": "^3.3.5",
+    "express": "^4.13.3",
+    "react": "^0.13.3",
+    "webpack": "^1.12.2"
   }
 }
