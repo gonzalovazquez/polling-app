@@ -18,6 +18,10 @@ io.sockets.on('connection', function(socket) {
         console.log('Disconected: %s sockets remaining.',  connections.length);
     });
 
+    socket.on('join', function(payload) {
+      console.log("Audience Joined: %s", payload.name);
+    });
+
     socket.emit('welcome', {
         title: title
     });
@@ -27,4 +31,3 @@ io.sockets.on('connection', function(socket) {
 });
 
 console.log('Polling server is running');
-
