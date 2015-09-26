@@ -38,7 +38,6 @@ var APP = React.createClass({
         return (
             <div>
                 <Header title={this.state.title} status={this.state.status} />
-                // Passing all state using spread operator
                 <RouteHandler {...this.state}/>
             </div>
         );
