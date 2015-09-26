@@ -10,7 +10,8 @@ var APP = React.createClass({
     getInitialState() {
         return {
             status: 'disconnected',
-            title: ''
+            title: '',
+            dance: 'yes, please'
         }
     },
 
@@ -37,7 +38,8 @@ var APP = React.createClass({
         return (
             <div>
                 <Header title={this.state.title} status={this.state.status} />
-                <RouteHandler />
+                // Passing all state using spread operator
+                <RouteHandler {...this.state}/>
             </div>
         );
     }
