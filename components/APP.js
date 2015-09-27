@@ -11,7 +11,7 @@ var APP = React.createClass({
         return {
             status: 'disconnected',
             title: '',
-            dance: 'yes, please'
+            member: {}
         }
     },
 
@@ -20,6 +20,7 @@ var APP = React.createClass({
         this.socket.on('connect', this.connect);
         this.socket.on('disconnect', this.disconnect);
         this.socket.on('welcome', this.welcome);
+        this.socket.on('joined', this.joined);
     },
 
     emit(eventName, payload) {
@@ -36,6 +37,10 @@ var APP = React.createClass({
 
     welcome(serverState) {
         this.setState({title: serverState.title});
+    },
+
+    joined(member){
+        this.setState({ member: member });
     },
 
     render() {
