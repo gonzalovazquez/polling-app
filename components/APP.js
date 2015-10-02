@@ -1,4 +1,4 @@
- var React = require('react');
+var React = require('react');
 var Router = require('react-router');
 var RouteHandler = Router.RouteHandler;
 
@@ -12,7 +12,8 @@ var APP = React.createClass({
             status: 'disconnected',
             title: '',
             member: {},
-            audience: []
+            audience: [],
+            speaker: {}
         }
     },
 
@@ -36,7 +37,7 @@ var APP = React.createClass({
         if (member) {
           this.emit('join', member);
         }
-        
+
         this.setState({ status: 'connected' });
     },
 
